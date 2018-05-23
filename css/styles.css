@@ -1,0 +1,171 @@
+img,
+embed,
+object,
+video {
+  max-width: 100%; }
+
+header,
+footer,
+section,
+article,
+div {
+  box-sizing: border-box; }
+
+
+/*COLORS*/
+:root {
+  --dark-gray: #2e4053;
+  --mid-gray: #5d6d7e;
+  --light-gray: #acb6bf; }
+
+
+/*FLEX BOX */
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.box {
+  width: 100%;
+}
+
+
+/* #### HEADER #### */
+.container-logo-name {
+  justify-content: space-between;
+}
+
+.logo {
+  font: small-caps 1.2em Limelight serif;
+  border-radius: 20%;
+  padding: 5px 5px 5px 5px;
+  border: solid 2px var(--mid-gray);
+  box-shadow: 2px 2px 3px var(--light-gray);
+  max-width: 50px;
+}
+
+.name {
+  font: 1.3em Limelight serif;
+  margin: 0;
+  color: var(--dark-gray);
+}
+
+.title {
+  margin: 0;
+  font: 1em Limelight serif;
+  color: var(--mid-gray);
+}
+
+.header {
+  height: 80px;
+  padding-top: 20px;
+}
+
+
+/* #### MAIN CONTENT #### */
+.main-content {
+  margin: 10px 0 0 0;
+  padding: 10px 0 10px 0;
+  border-top: solid 1px var(--light-gray);
+  border-bottom: solid 1px var(--light-gray);
+}
+
+.mainPicture {
+  width: 100%;
+  height: auto;
+}
+
+
+/* #### PORTFOLIO #### */
+.container-portfolio {
+  justify-content: space-around;
+}
+
+.portfolio {
+  padding: 10px 10px 20px 10px;
+  display: flex;
+}
+
+.portfolio-title {
+  font: small-caps 1.3em Limelight serif;
+  color: var(--mid-gray);
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 1px 1px var(--light-gray);
+}
+
+figure {
+  margin: auto;
+}
+
+figcaption {
+  text-align: center;
+}
+
+figcaption a {
+  font: 0.8em Limelight;
+  color: var(--mid-gray);
+}
+
+
+/* #### ASIDE #### */
+.aside {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.tool-logo {
+  height: 50px;
+  padding: 10px 0 10px 0;
+}
+
+
+/* #### MEDIA QUERIES #### */
+@media screen and (min-width: 425px) {
+  .container-aside {
+    order: -1;
+    width: 20%;
+  }
+  .container-main-content {
+    width: 80%;
+  }
+  .aside {
+    margin: 80px 0 0 0;
+    max-width: 80px;
+    flex-direction: column;
+    justify-content: flex-start;
+    }
+  }
+
+@media screen and (min-width: 500px) {
+  .animals,
+  .colors {
+    width: 50%; 
+  } 
+}
+
+@media screen and (min-width: 600px) {
+  .portfolio {
+    width: 33.3333%;
+  }
+  .container-portfolio {
+    justify-content: space-between;
+  }
+  article:nth-of-type(1) {
+    padding: 0 10px 0 0;
+  }
+  article:nth-of-type(2) {
+    padding: 0 5px 0 0;
+  }
+  article:nth-of-type(3) {
+    padding: 0 0 0 5px; }
+  }
+
+@media screen and (min-width: 800px) {
+  .wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+  }
+}
