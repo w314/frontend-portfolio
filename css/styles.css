@@ -23,10 +23,10 @@ div {
 .container {
   display: flex;
   flex-flow: row wrap;
-  width: 100%;
+  /*width: 100%;*/
 }
+.full-width {
 
-.box {
   width: 100%;
 }
 
@@ -65,13 +65,12 @@ div {
 
 /* #### MAIN CONTENT #### */
 .main-content {
-  margin: 10px 0 0 0;
   padding: 10px 0 10px 0;
   border-top: solid 1px var(--light-gray);
   border-bottom: solid 1px var(--light-gray);
 }
 
-.mainPicture {
+.main-picture {
   width: 100%;
   height: auto;
 }
@@ -139,10 +138,9 @@ figcaption a {
   }
 
 @media screen and (min-width: 500px) {
-  .animals,
-  .colors {
-    width: 50%; 
-  } 
+  .portfolio {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 600px) {
